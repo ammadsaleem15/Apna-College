@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Level 4</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Ammad ki Sisters</h1>
+      <h2>Registration Form</h2>
     </header>
 
     <main>
-        <!-- List Tags -->
-        <!-- <ol>
+      <!-- List Tags -->
+      <!-- <ol>
             <li>Atika:</li>
             <ul>
                 <li>Badtamez</li>
@@ -29,8 +28,8 @@
             </ul>
         </ol> -->
 
-        <!-- Table Tags (Table Row [tr], Table Data [td], Table Header [th] )-->
-        <!-- <Table>
+      <!-- Table Tags (Table Row [tr], Table Data [td], Table Header [th] )-->
+      <!-- <Table>
             <caption>Status of my girls</caption>
             <thead>
                 <tr>
@@ -53,31 +52,87 @@
             </tbody>
         </Table> -->
 
-        <!-- Forms Tag -->
-        <form action="action.php">
-            <!-- Form Element - Input -->
-            <input type="text" placeholder="Username" />
-            <br>
-            <input type="password" placeholder="Password" />
-            <br>
-            <br>
+      <!-- Forms Tag -->
+      <form action="action.php">
+        <!-- Form Element - Input -->
+        <input type="text" placeholder="Username" />
+        <br />
+        <br />
+        <input type="password" placeholder="Password" />
+        <br />
+        <hr />
 
-            <!-- Label and Radio -->
-            <label for="sis1">
-                <input type="radio" class="Atika" name="sisters" id="sis1" />Atika
-            </label>
-            <br>
-            <label for="sis2">
-                <input type="radio" class="Emaan" name="sisters" id="sis2" />Emaan
-            </label>
-            <br>
-            <label for="sis3">
-                <input type="radio" class="Duaa" name="sisters" id="sis3" />Duaa
-            </label>
-        </form>
+        <!-- Label and Radio -->
+        <h3>Select your class</h3>
+        <label for="11">
+          <input type="radio" class="XI" name="class" id="11" />XI
+        </label>
+        <br />
+        <label for="12">
+          <input type="radio" class="XII" name="class" id="12" />XII
+        </label>
+        <br />
+        <hr />
+        <!-- Class and id -->
+        <div id="id1" class="group1"></div>
+        <div id="id2" class="group1"></div>
 
-        
+        <!-- Checkbox -->
+        <h3>Select your fav subject</h3>
+        <label for="Maths">
+          <input type="checkbox" class="Maths" name="subject" id="1" />Maths
+        </label>
+        <br />
+        <label for="Physics">
+          <input type="checkbox" class="Physics" name="subject" id="2" />Physics
+        </label>
+        <br />
+        <label for="Chemistry">
+          <input
+            type="checkbox"
+            class="Chemistry"
+            name="subject"
+            id="3"
+          />Chemistry
+        </label>
+        <br />
+        <label for="Computer Science">
+          <input
+            type="checkbox"
+            class="Computer Science"
+            name="subject"
+            id="4"
+          />Computer Science
+        </label>
+        <br />
+        <br />
+        <hr />
+
+        <!-- Select -->
+        <h3>Select your desire city</h3>
+        <select name="city">
+          <option value="Karachi">Karachi</option>
+          <option value="Lahore">Lahore</option>
+          <option value="Peshawar">Peshawar</option>
+          <option value="Islamabad">Islamabad</option>
+        </select>
+        <hr />
+
+        <!-- Textarea -->
+        <h3>Feedback</h3>
+        <textarea
+          name="feedback"
+          id="fd"
+          cols="30"
+          rows="5"
+          placeholder="Write your feedback here"
+        ></textarea>
+        <br />
+        <br />
+
+        <!-- Submit -->
+        <input type="submit" value="submit" />
+      </form>
     </main>
-</body>
-
+  </body>
 </html>
